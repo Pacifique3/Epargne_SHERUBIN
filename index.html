@@ -11,7 +11,45 @@
   </script>
 </head>
 <body>
-  <p>Redirection vers le document... Si rien ne se passe, <a href="https://docs.google.com/spreadsheets/u/0/d/1VwGxNGkvrqoZVrflzzxQ4fhTbhqKo71iUw6hEeopOAs/edit?gid=904893745&usp=sharing">clique ici</a>.</p>
+    <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .loader {
+      border: 8px solid #e0e0e0;
+      border-top: 8px solid #007BFF;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin: auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .fallback {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .fallback a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+  </style>
 </body>
 </html>
 
