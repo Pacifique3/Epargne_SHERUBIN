@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Ouverture du document</title>
-  <script>
-    // Redirection vers Google Sheets dans un navigateur
-    window.onload = function() {
-      window.location.href = "https://docs.google.com/spreadsheets/u/0/d/1VwGxNGkvrqoZVrflzzxQ4fhTbhqKo71iUw6hEeopOAs/edit?gid=904893745&usp=sharing";
-    }
-  </script>
-</head>
-<body>
-    <style>
+  <style>
     body {
       background-color: #f8f9fa;
       font-family: Arial, sans-serif;
@@ -50,6 +42,20 @@
       text-decoration: none;
     }
   </style>
+  <script>
+    window.onload = function() {
+      // Redirection après 4 secondes
+      setTimeout(function() {
+        window.location.href = "https://docs.google.com/spreadsheets/u/0/d/1VwGxNGkvrqoZVrflzzxQ4fhTbhqKo71iUw6hEeopOAs/edit?gid=904893745&usp=sharing";
+      }, 4000);
+    }
+  </script>
+</head>
+<body>
+  <div class="loader"></div>
+  <div class="message">Redirection vers le document en cours...</div>
+  <div class="fallback">
+    Si rien ne se passe, <a href="https://docs.google.com/spreadsheets/u/0/d/1VwGxNGkvrqoZVrflzzxQ4fhTbhqKo71iUw6hEeopOAs/edit?gid=904893745&usp=sharing">clique ici</a>.
+  </div>
 </body>
 </html>
-
